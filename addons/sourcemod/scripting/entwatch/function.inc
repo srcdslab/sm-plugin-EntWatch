@@ -1,3 +1,7 @@
+// Purpose: Buffer sizes for item strings
+#define EW_MAX_SHORTNAME_LENGTH	32
+#define EW_MAX_TEMPLATE_LENGTH	64
+
 // Purpose: Global Function Variables
 float		g_fGameTime;
 int			g_iOutValueOffset = -1;
@@ -6,7 +10,7 @@ int			g_iOutValueOffset = -1;
 enum struct class_ItemConfig
 {
 	char		Name[32];
-	char		ShortName[32];
+	char		ShortName[EW_MAX_SHORTNAME_LENGTH];
 	char		Color[16];
 	char		ButtonClass[32];
 	char		FilterName[32];
@@ -24,7 +28,7 @@ enum struct class_ItemConfig
 	int			ButtonID;
 	int			GlowColor[4];
 	int			Trigger;
-	char		Spawner[64];
+	char		Spawner[EW_MAX_TEMPLATE_LENGTH];
 	bool		PhysBox;
 	bool		UsePriority;
 
@@ -40,7 +44,7 @@ enum struct class_ItemConfig
 enum struct class_ItemList
 {
 	char		Name[32];			// String:	Full Name of the Item
-	char		ShortName[32];		// String:	Short Name of Item for HUD
+	char		ShortName[EW_MAX_SHORTNAME_LENGTH];	// String:	Short Name of Item for HUD
 	char		Color[16];			// String:	Color for visual highlighting in chat and highlight color definitions
 	char		ButtonClass[32];	// String:	Entity class name to activate item actions (func_button/func_door/game_ui)
 	char		FilterName[32];		// String:	Targetname of the player that can activate the item (filter_activator_name)

@@ -641,7 +641,7 @@ stock void LoadConfig(bool bSecondLoad = false)
 		StringToLowerCase(g_sMap);
 
 	Handle hKeyValues = CreateKeyValues("entities");
-	char sBuffer_path[PLATFORM_MAX_PATH * 2], sBuffer_path_override[PLATFORM_MAX_PATH * 2], sBuffer_temp[32];
+	char sBuffer_path[PLATFORM_MAX_PATH * 2], sBuffer_path_override[PLATFORM_MAX_PATH * 2], sBuffer_temp[EW_MAX_TEMPLATE_LENGTH];
 
 	if (g_hCvar_Directory.BoolValue)
 	{
@@ -1828,7 +1828,7 @@ public Action EW_Command_Setshortname(int iClient, int iArgs)
 		return Plugin_Handled;
 	}
 
-	char Arguments[256], sArg[64], sNewName[32];
+	char Arguments[256], sArg[64], sNewName[EW_MAX_SHORTNAME_LENGTH];
 	GetCmdArgString(Arguments, sizeof(Arguments));
 
 	int len = BreakString(Arguments, sArg, sizeof(sArg));

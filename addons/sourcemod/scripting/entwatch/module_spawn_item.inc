@@ -25,7 +25,7 @@ public void EWM_Spawn_Spawn(int iAdmin, int iUserID, int iIndexConfig, bool bStr
 			{
 				int iEntity = -1;
 				bool bPTFound = false;
-				char sPTName[64];
+				char sPTName[EW_MAX_TEMPLATE_LENGTH];
 				while ((iEntity = FindEntityByClassname(iEntity, "point_template")) != -1)
 				{
 					GetEntPropString(iEntity, Prop_Data, "m_iName", sPTName, sizeof(sPTName));
