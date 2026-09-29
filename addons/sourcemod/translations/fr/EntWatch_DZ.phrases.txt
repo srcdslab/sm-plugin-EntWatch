@@ -8,6 +8,10 @@
 	{
 		"fr"	"La carte actuelle est supportée par ce plugin."
 	}
+	"No Config"
+	{
+		"fr"	"Aucun fichier de configuration chargé pour la carte actuelle."
+	}
 	"Use"
 	{
 		"fr"	"a utilisé"
@@ -102,7 +106,6 @@
 	}
 	"For Minutes"
 	{
-		"#format"	"{1:i}"
 		"fr"	"pour {1} minutes"
 	}
 	"Issued"
@@ -435,7 +438,6 @@
 	}
 	"Client Eban numbers"
 	{
-		"#format"	"{1:i}"
 		"fr" 	"a été Eban {1} fois"
 	}
 	"Is not restricted"
@@ -512,7 +514,6 @@
 	}
 	"Not have permission lEBan"
 	{
-		"#format"	"{1:i}"
 		"fr"	"Vous n'avez pas la permission d'EBan plus de {1} minutes"
 	}
 	"Not have permission rEBan"

@@ -106,7 +106,6 @@
 	}
 	"For Minutes"
 	{
-		"#format"	"{1:i}"
 		"ru" 	"на {1} минут"
 	}
 	"Issued"
@@ -439,7 +438,6 @@
 	}
 	"Client Eban numbers"
 	{
-		"#format"	"{1:d}"
 		"ru" 	"был ЕБанов {1} раз"
 	}
 	"Is not restricted"
@@ -516,7 +514,6 @@
 	}
 	"Not have permission lEBan"
 	{
-		"#format"	"{1:i}"
 		"ru" 		"Вы не имеете доступа для выдачи ЕБана более чем на {1} минут"
 	}
 	"Not have permission rEBan"
