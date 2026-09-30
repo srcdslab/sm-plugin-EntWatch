@@ -1,3 +1,7 @@
+> [!WARNING]
+> **This repository is archived and no longer maintained.**
+> We have moved to EntWatch 4: https://github.com/srcdslab/sm-plugin-entwatch-4
+
 > [!IMPORTANT]
 > For versions 3.DZ.21 and 3.DZ.78: If you are using an older version of the plugin, please perform the migration by [following the provided steps](#migration).
 
